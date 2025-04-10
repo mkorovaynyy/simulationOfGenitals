@@ -7,10 +7,15 @@ import java.util.Properties;
 import java.util.Random;
 
 /**
- * Утильный класс для записи {@link } boardSize в файл конфигурации
+ * Класс для записи {@link } boardSize в файл конфигурации. Здесь все шикарно: можем записать свое значение,
+ * а можем поиграть в рулетку и зарандомить это значение. А можем и нихуя не делать.
  */
 
 public class ConfigWriter {
+
+    /**
+     * Метод устанавливает значение {@link } boardSize в файле конфиги, равным значению, переданному в параметре.
+     */
     public static void setBoardSizeIntoConfig(int boardSize) {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream("config.properties")) {
@@ -27,7 +32,10 @@ public class ConfigWriter {
         }
 
     }
-
+    /**
+     * Метод устанавливает значение {@link } boardSize в файле конфиги, равным рандомнуму значению, в интервале от 15 до
+     * значения {@link } maxSize, переданного в параметрах.
+     */
     public static void setRandomValueForBoardSizeIntoConfig(int maxSize) {
         int boardSize = new Random().nextInt(15, maxSize);
         setBoardSizeIntoConfig(boardSize);

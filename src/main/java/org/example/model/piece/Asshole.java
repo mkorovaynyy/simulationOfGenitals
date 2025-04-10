@@ -1,5 +1,5 @@
 package org.example.model.piece;
 
-public class Asshole {
+public non-sealed class Asshole extends Genitalia {
     private int depth;
 }

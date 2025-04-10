@@ -1,5 +1,8 @@
 package org.example.model.piece;
 
-public class Penis {
-    private int length;
+public final class Penis extends Genitalia implements BloodLustableForPenis {
+    @Override
+    public void smellTheBlood() {
+        System.out.println("Sniff-sniff");
+    }
 }

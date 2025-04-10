@@ -1,5 +1,5 @@
 package org.example.model.piece;
 
-public class Vagina {
+public non-sealed class Vagina extends Genitalia {
     private int depth;
 }

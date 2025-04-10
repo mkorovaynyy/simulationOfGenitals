@@ -7,7 +7,7 @@ import org.example.model.enums.Gender;
  * Абстрактный родительский класс описывающий гениталии
  */
 
-public abstract class Genitalia {
+sealed public abstract class Genitalia permits Penis, Asshole, Vagina {
   protected Gender gender;
   protected Coordinate coordinate;
 }
