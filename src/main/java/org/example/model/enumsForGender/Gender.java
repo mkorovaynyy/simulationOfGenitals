@@ -1,4 +1,4 @@
-package org.example.model.enums;
+package org.example.model.enumsForGender;
 /**
  * Enum указывающий на пол сущности (только классика, без хардкора в виде различных трансформеров)
  */

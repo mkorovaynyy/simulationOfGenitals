@@ -1,4 +1,4 @@
-package org.example.Exception;
+package org.example.exception;
 /**
  * Класс для представления исключений при попытке изменить размер нашего кастомного List {@link } FixedSizeList
  */

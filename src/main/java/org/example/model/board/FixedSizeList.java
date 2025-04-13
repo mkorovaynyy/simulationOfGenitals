@@ -1,6 +1,6 @@
 package org.example.model.board;
 
-import org.example.Exception.FixedSizeListException;
+import org.example.exception.FixedSizeListException;
 
 import java.util.ArrayList;
 import java.util.Collection;

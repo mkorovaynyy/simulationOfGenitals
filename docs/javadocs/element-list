@@ -1,5 +1,5 @@
 org.example
 org.example.model.board
-org.example.model.enums
+org.example.model.enumsForGender
 org.example.model.piece
 org.example.service
