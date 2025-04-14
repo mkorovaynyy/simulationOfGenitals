@@ -12,7 +12,7 @@ public class ConfigReader {
 
     /**
      * Метод возвращает значение {@return } boardSize из файла конфигурации, если его нет возвращает
-     * значение по умолчанию {@return }, равное 15
+     * значение по умолчанию {@return }, равное 10
      */
     public static int getBoardSizeFromConfigOrSetThemDefaultValueIfNotFound() {
         Properties properties = new Properties();
@@ -20,7 +20,7 @@ public class ConfigReader {
             properties.load(fis);
             if (properties.getProperty("boardSize") != null) {
                 return Integer.parseInt(properties.getProperty("boardSize"));
-            } else return 15;
+            } else return 10;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
